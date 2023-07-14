@@ -1,0 +1,129 @@
+/* Definição de variáveis */
+:root {
+    --primary-color: #375c18c2;
+    --secondary-color: #6c757d;
+    --light-color: #dde0e4;
+    --dark-color: #26292c;
+}
+
+/* Estilos gerais */
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+
+/* Estilos de links */
+a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+/* Estilos de cabeçalho */
+header {
+    background: linear-gradient(to right, #3776AB, #FFD43B, #306998);
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+/* Estilos de conteúdo principal */
+main {
+    padding: 1rem;
+    flex: 1;
+    /* Permite que o conteúdo principal ocupe o espaço restante */
+}
+
+/* Estilos de títulos */
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos de listas */
+ol,
+ul {
+    list-style: decimal;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    /* Recuo personalizado */
+}
+
+ol ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eaeaea;
+}
+
+
+
+/* Estilos de botões */
+button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Estilos de rodapé */
+footer {
+    background: linear-gradient(to right, #3776AB, #FFD43B, #306998);
+    color: var(--dark-color);
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adicione o box shadow aqui */
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+
